@@ -1,0 +1,8 @@
+
+<hr />
+<div class="container">
+  <h1>App shell</h1>
+  <ng-container #comp *ngFor="let item of loaders" [ngSwitch]="item.framework">
+    <app-react-wrapper *ngSwitchCase="'react'" [component]="item.component"></app-react-wrapper>
+  </ng-container>
+</div>

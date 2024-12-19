@@ -1,0 +1,18 @@
+{
+  "name": "viblo-mfe-css-handling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:all": "concurrently \"npm install   --prefix  angular-app\" \"npm install   --prefix app-shell\" \"npm install   --prefix react-app\" \"npm install  --prefix  vue-app\"",
+    "start:all": "concurrently \"npm start   --prefix angular-app\" \"npm start  --prefix app-shell\" \"npm run dev  --prefix react-app\" \"npm run build  --prefix vue-app\" \"npm run preview  --prefix vue-app\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "viblo-mfe-css-handling": "file:"
+  }
+}
