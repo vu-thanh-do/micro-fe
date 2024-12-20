@@ -51,7 +51,7 @@ const FormTest = () => {
             </tr>
             <tr>
               <td>Total</td>
-              <th colSpan={0 + totalPositions}>0</th>
+              <th colSpan={0 + totalPositions}>{positionCount.length}</th>
             </tr>
             <tr>
               <td>Position</td>
@@ -185,5 +185,4 @@ const FormTest = () => {
     </div>
   );
 };
-
 export default FormTest;
